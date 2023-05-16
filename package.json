@@ -1,0 +1,20 @@
+{
+  "name": "rollup-bundle-visualizer-repro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx rollup --config rollup.config.mjs",
+    "real-size": "wc -c build/bundle.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@rollup/plugin-node-resolve": "^15.0.2",
+    "@rollup/plugin-terser": "^0.4.2",
+    "date-fns": "^2.30.0",
+    "rollup": "^3.21.8",
+    "rollup-plugin-visualizer": "^5.9.0"
+  }
+}
